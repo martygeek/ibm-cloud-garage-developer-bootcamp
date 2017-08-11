@@ -8,8 +8,14 @@ describe('the palindrome canary spec', () => {
 //     return phrase === phrase.split('').reverse().join('');
 //   }
 //
+  let isPalindrome = (word) => {
+    return true;
+  };
+
   describe('a palindrome should be', () => {
-    it('true for mom');
+    it('true for mom', () => {
+      isPalindrome('mom').should.be.true();
+    });
     it('false for dude');
     it('false for ""');
     it('true for a');
